@@ -36,6 +36,14 @@ p {
     font-size: 1.75rem;
 }
 
+li {
+    margin: 0;
+    padding: 0;
+
+    font-family: Teko;
+    font-size: 1.4rem;
+}
+
 header {
     background-image: url(./img/background-header.jpg);
     background-size: cover;
@@ -78,7 +86,7 @@ header p {
         display: inline-block;
 
         max-width: 30rem;
-        max-height: 18rem;
+        margin-bottom: 12%;
 
         padding: 1rem;
         background-color: #C8E8DD;
@@ -127,60 +135,83 @@ header p {
 
 /* Key Features */
 
-    .key-features {
+    .my-projects {
         background-color: #E8CEC8;
     }
 
-    .features {
+    .projects {
         display: flex;
         margin: 7% 10% 0 10%;
 
         justify-content: space-between;
-        height: 40rem;
+        height: 80vh;
     }
 
-    .feature {
+    .project {
         background-color: #fff;
-        max-width: 22rem;
-        max-height: 20rem;
+        width: 22rem;
+        height: 20rem;
         padding: 1rem;
         border-radius: 15px;
-
-        transition: all 0.5s ease-in;
-
         cursor: pointer;
+
+        transition: all 0.5s ease-in, height 0.5s ease-in;
+        max-height: 500px;
     }
 
-    .feature p {
+    .project-full-info {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.1s ease-out 0.1s;
+    }
+
+    .project a {
+        display: none;
+    }
+
+    .project p {
         margin-top: 7%;
         font-size: 1.5rem;
         opacity: 0.1;
 
-        transition: opacity 0.1s ease-out 0.5s;
+        transition: opacity 0.1s ease-out 0.45s;
     }
 
-    .feature span {
-        font-size: 1.2rem;
-        opacity: 1;
+    .project-inactive {
+        background-color: #fff;
+        width: 22rem;
+        height: 20rem;
+        padding: 1rem;
+        border-radius: 15px;
+    }
 
+    .project-inactive p {
+        margin-top: 7%;
+        font-size: 1.5rem;
+    }
+
+
+    .project .read-more {
+        font-size: 1.3rem;
         font-family: Teko;
-
         color: #74A896;
+        position: relative;
+        z-index: 1;
+
+        transition: opacity 0.1s ease-out 0.55s;
     }
 
-    .feature:focus {
-        box-shadow: 1rem 0.7rem #344c43;
-        padding: 5rem 2.5rem;
+    .project .collapse {
+        font-size: 1.3rem;
+        font-family: Teko;
+        color: #74A896;
+        float: right;
+        opacity: 0;
+        z-index: 1;
+
+        transition: none;
     }
 
-    .feature:focus p {
-        opacity: 1;
-    }
-
-    .feature:focus span {
-        display: none;
-    }
-    
 /* Footer */
 
     footer {

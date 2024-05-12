@@ -4,6 +4,7 @@
   <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js"></script>
 
     <!-- Anton font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,28 +41,41 @@
             <p>that's me :)</p>
           </div>
 
-          <p>Hi! Andrew's here.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, odit temporibus? Perferendis voluptas voluptatem, similique repellendus ipsa, corrupti dolore nemo quas est modi aspernatur quisquam hic! Eos obcaecati vitae at.</p>
+          <p>Hi! Andrew's here.<br><br>This my portfolio page. Initially, it was just a task to build a website of some fake company, but I got so caught up in the process that I started to like what I was getting, which is why I decided to make it my own portfolio site.<br><br>There, you will see some projects that I've already made, and ones that are going to be realesed soon.<br><br>I hope you'll enjoy.</p>
         </div>
       </section>
 
-      <section class="key-features">
-        <h2>Key Features</h2>
+      <section class="my-projects">
+        <h2>My Projects</h2>
 
-        <div class="features">
-          <div class="feature" tabindex="0">
-            <h3>Feature #1</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore officia animi adipisci. Doloribus non ea et similique explicabo, nostrum fuga expedita, maiores labore vel facilis commodi? Sit aspernatur facere voluptas!</p>
-            <span>click to read...</span>
+        <div class="projects">
+          <div class="project" id="proj-1" tabindex="0">
+            <h3>Project Kelvin</h3>
+            <p>This project is a homepage of Kelvin - a web developer from New York.</p>
+            <div class="project-full-info">
+              <p>Languages:</p>
+              <ul>
+                <li>CSS: 57.6%</li>
+                <li>HTML: 39.6%</li>
+                <li>JavaScript: 2.8%</li>
+              </ul>
+              <p>External libraries:</p>
+              <ul>
+                <li>AOS (Animate On Scroll) <a href="https://michalsnik.github.io/aos/" target="_blank">link</a></li>
+              </ul>
+              <p><a href="./projectKelvin/index.html" target="_blank">See the project</a></p>
+              <p><a href="https://github.com/vanickas/projectKelvin" target="_blank">GitHub repository</a></p>
+            </div>
+            <span class="read-more">click to read...</span>
+            <span class="collapse">collapse</span>
           </div>
-          <div class="feature" tabindex="0">
-            <h3>Feature #2</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore officia animi adipisci. Doloribus non ea et similique explicabo, nostrum fuga expedita, maiores labore vel facilis commodi? Sit aspernatur facere voluptas!</p>
-            <span>click to read...</span>
+          <div class="project-inactive" id="proj-2" tabindex="0">
+            <h3>Project #2</h3>
+            <p>Under Development, be patient...</p>
           </div>
-          <div class="feature" tabindex="0">
-            <h3>Feature #3</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore officia animi adipisci. Doloribus non ea et similique explicabo, nostrum fuga expedita, maiores labore vel facilis commodi? Sit aspernatur facere voluptas!</p>
-            <span>click to read...</span>
+          <div class="project-inactive" id="proj-3" tabindex="0">
+            <h3>Project #3</h3>
+            <p>Under Development, be patient...</p>
           </div>
         </div>
       </section>
